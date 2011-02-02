@@ -1,0 +1,33 @@
+<!DOCTYPE plugin SYSTEM "../../libs/devblocks/plugin.dtd">
+<plugin>
+	<id>cerb5blog.attachments_tab</id>
+	<name>[Cerb5blog.com]: Adds Attachement tab to ticket view.</name>
+	<description>Adds an Attachement tab to ticket views so you can see all the attachements in 1 place.</description>
+	<author>Robert Middleswarth</author>
+	<revision>0</revision>
+	<link>http://cerb5blog.com/project/attachmentstab</link>
+	<image>plugin.png</image>
+ 
+	<!-- Plugin Dependencies -->
+	
+	<dependencies>
+		<require plugin_id="cerberusweb.core" version="5.0.0-rc1" />
+	</dependencies>
+
+  <extensions>
+		<extension point="cerberusweb.ticket.tab">
+			<id>cerb5blog.attachments_tab.ticket.tab</id>
+			<name>Cerb5 Blog Attachments Tab</name>
+			<class>
+				<file>api/App.php</file>
+				<name>Cerb5BlogAttachementsTicketTab</name>
+			</class>
+			<params>
+				<param key="uri" value="Attachements" />
+				<param key="title" value="cerb5blog.attachments_tab.ticket.tab" />
+			</params>
+		</extension>
+
+	</extensions>
+
+</plugin>
