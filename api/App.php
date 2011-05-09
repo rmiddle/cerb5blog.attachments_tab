@@ -35,8 +35,12 @@ echo "<br>";
 		$view->addParams(array(
 			SearchFields_AttachmentLink::GUID => new DevblocksSearchCriteria(SearchFields_AttachmentLink::GUID,'in',array_keys($attachment_links)),
 		), true);
+print_r($view);        
+echo "<br>";
 		
 		C4_AbstractViewLoader::setView($view->id,$view);
+print_r($view);        
+echo "<br>";
 		
 		$tpl->assign('view', $view);
 		
