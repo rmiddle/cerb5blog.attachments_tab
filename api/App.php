@@ -20,7 +20,7 @@ class Cerb5BlogAttachementsTicketTab extends Extension_TicketTab {
             
 		$defaults = new C4_AbstractViewModel();
 		$defaults->class_name = 'View_AttachmentLink';
-        $defaults->id = '_ticket_view_attachements';
+        $defaults->id = '_tv_attachements';
 		$defaults->name = 'Ticket Attachements';
         $defaults->renderLimit = 15;
 
