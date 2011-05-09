@@ -26,10 +26,12 @@ class Cerb5BlogAttachementsTicketTab extends Extension_TicketTab {
 		$defaults->renderLimit = 15;
 
 print_r($defaults);        
-
+echo "<br>";
+echo "<br>";
 		$view = C4_AbstractViewLoader::getView($defaults->id, $defaults);
 		$view->renderPage = 0;
 print_r($view);        
+echo "<br>";
 		$view->addParams(array(
 			SearchFields_AttachmentLink::GUID => new DevblocksSearchCriteria(SearchFields_AttachmentLink::GUID,'in',array_keys($attachment_links)),
 		), true);
