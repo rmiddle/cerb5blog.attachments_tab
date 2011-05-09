@@ -18,13 +18,13 @@ class Cerb5BlogAttachementsTicketTab extends Extension_TicketTab {
 
 		$defaults = new C4_AbstractViewModel();
 		$defaults->class_name = 'View_AttachmentLink';
-		$defaults->name = 'Attachements';
+		$defaults->name = 'Ticket Attachements';
 		$defaults->id = '_ticket_view_attachements';
 		$defaults->renderLimit = 15;
 
 		$view = C4_AbstractViewLoader::getView($defaults->id, $defaults);
 		$view->renderPage = 0;
-		$view->addParams(array(
+		$view->addParamsHidden(array(
 			SearchFields_AttachmentLink::GUID => new DevblocksSearchCriteria(SearchFields_AttachmentLink::GUID,'in',array_keys($attachment_links)),
 		), true);
 		
