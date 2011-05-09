@@ -16,6 +16,9 @@ class Cerb5BlogAttachementsTicketTab extends Extension_TicketTab {
 			DAO_AttachmentLink::getByContextIds(CerberusContexts::CONTEXT_COMMENT, $comment_ids)
 		);
 
+        if(empty($attachment_links))
+            return;
+        
 		$defaults = new C4_AbstractViewModel();
 		$defaults->class_name = 'View_AttachmentLink';
 		$defaults->name = 'Ticket Attachements';
@@ -24,7 +27,7 @@ class Cerb5BlogAttachementsTicketTab extends Extension_TicketTab {
 
 		$view = C4_AbstractViewLoader::getView($defaults->id, $defaults);
 		$view->renderPage = 0;
-		$view->addParamsHidden(array(
+		$view->addParams(array(
 			SearchFields_AttachmentLink::GUID => new DevblocksSearchCriteria(SearchFields_AttachmentLink::GUID,'in',array_keys($attachment_links)),
 		), true);
 		
