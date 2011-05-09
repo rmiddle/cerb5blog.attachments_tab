@@ -18,7 +18,7 @@ class Cerb5BlogAttachementsTicketTab extends Extension_TicketTab {
 
         if(empty($attachment_links))
             return;
-        
+print_r($attachment_links);        
 		$defaults = new C4_AbstractViewModel();
 		$defaults->class_name = 'View_AttachmentLink';
 		$defaults->name = 'Ticket Attachements';
