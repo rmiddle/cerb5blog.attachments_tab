@@ -3,7 +3,6 @@
 class Cerb5BlogAttachementsTicketTab extends Extension_TicketTab {
 	function showTab() {
 		@$ticket_id = DevblocksPlatform::importGPC($_REQUEST['ticket_id'],'integer',0);
-		$tpl_path = dirname(dirname(__FILE__)) . '/templates/';
 		
 		$tpl = DevblocksPlatform::getTemplateService();
 		//$visit = CerberusApplication::getVisit();
@@ -16,14 +15,17 @@ class Cerb5BlogAttachementsTicketTab extends Extension_TicketTab {
 			DAO_AttachmentLink::getByContextIds(CerberusContexts::CONTEXT_COMMENT, $comment_ids)
 		);
 
+        if(empty($attachment_links))
+            return;
+            
 		$defaults = new C4_AbstractViewModel();
 		$defaults->class_name = 'View_AttachmentLink';
-		$defaults->name = 'Attachements';
-		$defaults->id = '_ticket_view_attachements';
-		$defaults->renderLimit = 15;
+        $defaults->id = '_tv_attachements';
+		$defaults->name = 'Ticket Attachements';
+        $defaults->renderLimit = 15;
 
 		$view = C4_AbstractViewLoader::getView($defaults->id, $defaults);
-		$view->renderPage = 0;
+
 		$view->addParams(array(
 			SearchFields_AttachmentLink::GUID => new DevblocksSearchCriteria(SearchFields_AttachmentLink::GUID,'in',array_keys($attachment_links)),
 		), true);
@@ -32,7 +34,7 @@ class Cerb5BlogAttachementsTicketTab extends Extension_TicketTab {
 		
 		$tpl->assign('view', $view);
 		
-		$tpl->display('file:' . $tpl_path . 'attachments/index.tpl');
+		$tpl->display('devblocks:cerberusweb.core::configuration/section/storage_attachments/index.tpl');
 	}
 
 	function saveTab() {
