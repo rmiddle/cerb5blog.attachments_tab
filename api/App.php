@@ -28,7 +28,7 @@ class Cerb5BlogAttachementsTicketTab extends Extension_TicketTab {
 
 		$view->addParamsHidden(array(
 			SearchFields_AttachmentLink::GUID => new DevblocksSearchCriteria(SearchFields_AttachmentLink::GUID,'in',array_keys($attachment_links)),
-		), true);
+		), false);
         $view->renderPage = 0;
 		
 		C4_AbstractViewLoader::setView($view->id,$view);
