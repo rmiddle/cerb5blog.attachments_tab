@@ -31,9 +31,9 @@ echo "<br>";
 echo "<br>";
 print_r($view);        
 echo "<br>";
-		//$view->addParams(array(
-			SearchFields_AttachmentLink::GUID => new DevblocksSearchCriteria(SearchFields_AttachmentLink::GUID,'in',array_keys($attachment_links)),
-		), true);
+//		$view->addParams(array(
+//			SearchFields_AttachmentLink::GUID => new DevblocksSearchCriteria(SearchFields_AttachmentLink::GUID,'in',array_keys($attachment_links)),
+//		), true);
 print_r($view);        
 echo "<br>";
 		
