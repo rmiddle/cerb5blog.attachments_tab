@@ -1,3 +1,14 @@
+
+Installation
+------------
+* Change directory to **/cerb5/storage/plugins/**
+* `git clone git://github.com/rmiddle/cerb5blog.attachments_tab.git`
+* `git checkout --track -b 5.4 origin/5.4`
+* In your helpdesk, enable the plugin from **Setup->Features & Plugins**.
+
+`Warning not yet ready for use`
+===========================================
+
 Cerb5 Plugins - cerb5blog.attachments_tab
 ===========================================
 Copyright (C) 2011 Robert Middleswarth
@@ -7,11 +18,22 @@ What's this?
 ------------
 Display's all the attachment contaned inside a ticket in own tab.
 
-Installation
+* Not yet Tested
+
+Installation using Git
 ------------
 * Change directory to **/cerb5/storage/plugins/**
 * `git clone git://github.com/rmiddle/cerb5blog.attachments_tab.git`
-* `git checkout --track -b 5.4 origin/5.4`
+* `cd cerb5blog.attachments_tab`
+* `git checkout --track -b 5.5 origin/5.5`
+* In your helpdesk, enable the plugin from **Setup->Features & Plugins**.
+
+Installation using zip / tar.gz
+------------
+* Goto `https://github.com/rmiddle/cerb5blog.attachments_tab`
+* Select the correct branch that matches your version of Cerberus
+* click Download button.
+* Unzip in to **/cerb5/storage/plugins/cerb5blog.attachments_tab**
 * In your helpdesk, enable the plugin from **Setup->Features & Plugins**.
 
 Note: Make sure you branch number matches your Cerberus Version Number.
