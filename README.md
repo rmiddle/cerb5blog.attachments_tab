@@ -5,7 +5,7 @@ Copyright (C) 2011 Robert Middleswarth
 
 What's this?
 ------------
-Display's all the attachment contaned inside a ticket in own tab.
+Displays all the attachments for a ticket in its own tab.
 
 Installation
 ------------
@@ -14,7 +14,7 @@ Installation
 * `git checkout --track -b 5.4 origin/5.4`
 * In your helpdesk, enable the plugin from **Setup->Features & Plugins**.
 
-Note: Make sure you branch number matches your Cerberus Version Number.
+Note: Make sure you branch number matches your Cerb5 version.
 
 Credits
 -------
