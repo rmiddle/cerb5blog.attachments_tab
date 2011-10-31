@@ -28,16 +28,15 @@ class Cerb5BlogAttachementsTicketTab extends Extension_TicketTab {
 
 		$view = C4_AbstractViewLoader::getView($defaults->id, $defaults);
 
-//		$view->addParamsRequired(array(
-//			SearchFields_AttachmentLink::GUID => new DevblocksSearchCriteria(SearchFields_AttachmentLink::GUID,'in',array_keys($attachment_links)),
-//		), true);
+		$view->addParamsRequired(array(
+			SearchFields_AttachmentLink::GUID => new DevblocksSearchCriteria(SearchFields_AttachmentLink::GUID,'in',array_keys($attachment_links)),
+		), true);
         $view->renderPage = 0;
 		
 		C4_AbstractViewLoader::setView($view->id,$view);
 		
 		$tpl->assign('view', $view);
 		
-        //$tpl->display('file:' . $tpl_path . 'attachments/index.tpl');
         $tpl->display('devblocks:cerberusweb.core::configuration/section/storage_attachments/index.tpl');
 	}
 
