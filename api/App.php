@@ -15,7 +15,7 @@ class Cerb5BlogAttachementsTicketTab extends Extension_TicketTab {
 			DAO_AttachmentLink::getByContextIds(CerberusContexts::CONTEXT_MESSAGE, $message_ids),
 			DAO_AttachmentLink::getByContextIds(CerberusContexts::CONTEXT_COMMENT, $comment_ids)
 		);
-
+print_r($attachment_links);
         if(empty($attachment_links))
             return;
             
