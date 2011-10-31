@@ -37,7 +37,8 @@ class Cerb5BlogAttachementsTicketTab extends Extension_TicketTab {
 		
 		$tpl->assign('view', $view);
 		
-        $tpl->display('file:' . $tpl_path . 'attachments/index.tpl');
+        //$tpl->display('file:' . $tpl_path . 'attachments/index.tpl');
+        $tpl->display('devblocks:cerberusweb.core::configuration/section/storage_attachments/index.tpl');
 	}
 
 	function saveTab() {
