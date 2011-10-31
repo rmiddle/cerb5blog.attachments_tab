@@ -15,9 +15,6 @@ class Cerb5BlogAttachementsTicketTab extends Extension_TicketTab {
 			DAO_AttachmentLink::getByContextIds(CerberusContexts::CONTEXT_MESSAGE, $message_ids),
 			DAO_AttachmentLink::getByContextIds(CerberusContexts::CONTEXT_COMMENT, $comment_ids)
 		);
-echo "<pre>";        
-print_r($attachment_links);
-echo "</pre>";        
         if(empty($attachment_links))
             return;
             
@@ -33,6 +30,9 @@ echo "</pre>";
 			SearchFields_AttachmentLink::GUID => new DevblocksSearchCriteria(SearchFields_AttachmentLink::GUID,'in',array_keys($attachment_links)),
 		), true);
         $view->renderPage = 0;
+echo "<pre>";        
+print_r($view);
+echo "</pre>";        
 		
 		C4_AbstractViewLoader::setView($view->id,$view);
 		
