@@ -1,4 +1,3 @@
-
 Installation
 ------------
 * Change directory to **/cerb5/storage/plugins/**
