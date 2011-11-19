@@ -5,7 +5,7 @@ Installation
 * `git checkout --track -b 5.6 origin/5.6`
 * In your helpdesk, enable the plugin from **Setup->Features & Plugins**.
 
-`Warning not yet ready for use`
+`Warning this version is still considered in development and may not work as expected`
 ===========================================
 
 Cerb5 Plugins - cerb5blog.attachments_tab
