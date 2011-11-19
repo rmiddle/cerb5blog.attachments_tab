@@ -1,11 +1,12 @@
+
 Installation
 ------------
 * Change directory to **/cerb5/storage/plugins/**
 * `git clone git://github.com/rmiddle/cerb5blog.attachments_tab.git`
-* `git checkout --track -b 5.6 origin/5.6`
+* `git checkout --track -b 5.4 origin/5.4`
 * In your helpdesk, enable the plugin from **Setup->Features & Plugins**.
 
-`Warning this version is still considered in development and may not work as expected`
+`Warning not yet ready for use`
 ===========================================
 
 Cerb5 Plugins - cerb5blog.attachments_tab
@@ -24,7 +25,7 @@ Installation using Git
 * Change directory to **/cerb5/storage/plugins/**
 * `git clone git://github.com/rmiddle/cerb5blog.attachments_tab.git`
 * `cd cerb5blog.attachments_tab`
-* `git checkout --track -b 5.6 origin/5.6`
+* `git checkout --track -b 5.5 origin/5.5`
 * In your helpdesk, enable the plugin from **Setup->Features & Plugins**.
 
 Installation using zip / tar.gz
