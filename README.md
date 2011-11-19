@@ -6,9 +6,6 @@ Installation
 * `git checkout --track -b 5.6 origin/5.6`
 * In your helpdesk, enable the plugin from **Setup->Features & Plugins**.
 
-`Warning not yet ready for use`
-===========================================
-
 Cerb5 Plugins - cerb5blog.attachments_tab
 ===========================================
 Copyright (C) 2011 Robert Middleswarth
@@ -18,7 +15,7 @@ What's this?
 ------------
 Display's all the attachment contaned inside a ticket in own tab.
 
-* Not yet Tested
+* 5.6, 5.6.1, 5.6.2
 
 Installation using Git
 ------------
