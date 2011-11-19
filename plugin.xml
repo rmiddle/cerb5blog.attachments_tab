@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.devblocks.com/schema/plugin.xsd">
 	<id>cerb5blog.attachments_tab</id>
-	<name>[Cerb5blog.com]: Adds Attachement tab to ticket view.</name>
-	<description>Adds an Attachement tab to ticket views so you can see all the attachements in 1 place.</description>
+	<name>[Cerb5blog.com]: Adds Attachment tab to ticket view.</name>
+	<description>Adds an Attachment tab to ticket views so you can see all the attachments in one place.</description>
 	<author>Robert Middleswarth</author>
 	<revision>0</revision>
 	<link>http://cerb5blog.com/project/attachmentstab</link>
