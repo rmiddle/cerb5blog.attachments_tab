@@ -1,17 +1,10 @@
-Installation
-------------
-* Change directory to **/cerb5/storage/plugins/**
-* `git clone git://github.com/rmiddle/cerb5blog.attachments_tab.git`
-* `git checkout --track -b 5.7 origin/5.7`
-* In your helpdesk, enable the plugin from **Setup->Features & Plugins**.
-
-`Warning this version is still considered in development and may not work as expected`
-===========================================
-
 Cerb5 Plugins - cerb5blog.attachments_tab
 ===========================================
 Copyright (C) 2011 Robert Middleswarth
 [http://www.cerb5blog.com/](http://www.cerb5blog.com/)  
+
+`Warning this version is still considered in development and may not work as expected`
+===========================================
 
 What's this?
 ------------
