@@ -3,9 +3,6 @@ Cerb5 Plugins - cerb5blog.attachments_tab
 Copyright (C) 2011 Robert Middleswarth
 [http://www.cerb5blog.com/](http://www.cerb5blog.com/)  
 
-`Warning this version is still considered in development and may not work as expected`
-===========================================
-
 What's this?
 ------------
 Display's all the attachment contaned inside a ticket in own tab.
